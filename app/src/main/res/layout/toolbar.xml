@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:id="@+id/mapProgress"
+            android:onClick="startMap"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@android:drawable/ic_menu_mapmode"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:id="@+id/startMap"
+            android:onClick="startMap"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
